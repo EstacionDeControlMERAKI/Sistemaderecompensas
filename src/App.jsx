@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  Calendar as CalendarIcon, Users, CheckCircle, Clock, Award, BarChart2, 
-  Settings, Plus, Trash2, Edit2, Play, Sparkles, Check, Star, Shield, Heart, Smile, Cloud, CloudSync, RefreshCw
-} from 'lucide-react';
+const SUPABASE_URL = 'https://ndzrbgxhmeeaxnumknos.supabase.co'; 
+const SUPABASE_KEY = 'sb_publishable_8atKAqu758GaAJLyNB9shw_AhQ0y_8V';
+
+async function fetchFamilyData(familyId) {
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('routine');
